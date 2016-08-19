@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xEY-l1-kQw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Magic-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rollsample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background-food" translatesAutoresizingMaskIntoConstraints="NO" id="c3w-Af-8LD">
+                                <frame key="frameInset" minY="64" width="375" height="603"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What to eat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2a-2n-hY0">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9k9-Zw-j19"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqA-Aj-Nnh">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Magic">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttomClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R0t-6g-lAc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c3w-Af-8LD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ffv-Ac-xlQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Z2a-2n-hY0" secondAttribute="trailing" constant="10" id="IpP-Ic-5GJ"/>
+                            <constraint firstItem="YqA-Aj-Nnh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="120" id="KhP-vn-Xs1"/>
+                            <constraint firstAttribute="trailing" secondItem="YqA-Aj-Nnh" secondAttribute="trailing" constant="120" id="Z8x-ja-vIs"/>
+                            <constraint firstAttribute="trailing" secondItem="c3w-Af-8LD" secondAttribute="trailing" id="adO-4S-Pcn"/>
+                            <constraint firstItem="c3w-Af-8LD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="biV-er-JZs"/>
+                            <constraint firstItem="YqA-Aj-Nnh" firstAttribute="top" secondItem="9k9-Zw-j19" secondAttribute="bottom" constant="40" id="gyx-77-L2b"/>
+                            <constraint firstItem="Z2a-2n-hY0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="haS-3Z-yqW"/>
+                            <constraint firstAttribute="trailing" secondItem="9k9-Zw-j19" secondAttribute="trailing" constant="-19" id="kma-ke-6oE"/>
+                            <constraint firstItem="9k9-Zw-j19" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-20" id="n12-YO-8ol"/>
+                            <constraint firstItem="Z2a-2n-hY0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="yro-Q8-HbJ"/>
+                            <constraint firstItem="9k9-Zw-j19" firstAttribute="top" secondItem="Z2a-2n-hY0" secondAttribute="bottom" constant="72" id="zDA-lD-s2W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Magic" id="2NN-OX-TiL"/>
+                    <connections>
+                        <outlet property="pickerView" destination="9k9-Zw-j19" id="ZDg-op-2cd"/>
+                        <outlet property="resultLabel" destination="Z2a-2n-hY0" id="rhf-He-LDg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="390.85457271364322"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="b9l-SR-zAi">
+            <objects>
+                <viewController id="zBq-q1-ryO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lez-Yv-IHc"/>
+                        <viewControllerLayoutGuide type="bottom" id="pmI-eJ-3Nh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gk0-th-2Vx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodBg" translatesAutoresizingMaskIntoConstraints="NO" id="x4g-ca-Mhg">
+                                <frame key="frameInset" minY="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFf-hc-7MV">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGk-dB-fAf">
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <state key="normal" title="Magic Food">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="OLR-Bt-k4k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OFf-hc-7MV" firstAttribute="top" secondItem="Lez-Yv-IHc" secondAttribute="bottom" constant="50" id="JFV-Vb-WbL"/>
+                            <constraint firstItem="ZGk-dB-fAf" firstAttribute="top" secondItem="OFf-hc-7MV" secondAttribute="bottom" constant="130" id="KGV-iK-pVg"/>
+                            <constraint firstItem="OFf-hc-7MV" firstAttribute="leading" secondItem="gk0-th-2Vx" secondAttribute="leadingMargin" constant="90" id="Lgb-D1-o8c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OFf-hc-7MV" secondAttribute="trailing" constant="90" id="OtN-ef-j8L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZGk-dB-fAf" secondAttribute="trailing" constant="65" id="Stt-Ng-5Wo"/>
+                            <constraint firstItem="ZGk-dB-fAf" firstAttribute="leading" secondItem="gk0-th-2Vx" secondAttribute="leadingMargin" constant="65" id="XRS-VJ-CKc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menu" id="DuZ-qm-PwB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bj-DD-4Se" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="390.85457271364322"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kFx-V8-BZd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xEY-l1-kQw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Ao-Xf-L8q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zBq-q1-ryO" kind="relationship" relationship="rootViewController" id="0AU-Qp-eYF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6HU-FS-sIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-food" width="500" height="752"/>
+        <image name="foodBg" width="453" height="680"/>
+    </resources>
+</document>
